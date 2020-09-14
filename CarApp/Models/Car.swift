@@ -8,4 +8,21 @@
 
 import Foundation
 
+struct Car: Hashable {
+    var year: Int
+    var brand: String
+    var model: String
+    var type: CarType
+}
 
+var CarMakers: [String] = [ "Honda", "Toyota", "Chevrolet", "Ford", "BMV", "Jeep", "Mercedes", "Subaru", "Porsche", "Nissan"]
+
+enum CarType {
+    case sedan
+    case cuv
+    case hatchback
+    case minivan
+    case cabriolet
+    case coupe
+    case pickup
+}
