@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CarsListView.swift
 //  CarApp
 //
 //  Created by Кристина Перегудова on 14.09.2020.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CarsListView: View {
     var body: some View {
-        CarsListView()
+        Text("Hello, World!")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CarsListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CarsListView()
     }
 }
