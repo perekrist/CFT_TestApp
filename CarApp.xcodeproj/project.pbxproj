@@ -13,6 +13,10 @@
 		CA66E041250FBFCD0014A13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA66E040250FBFCD0014A13F /* Assets.xcassets */; };
 		CA66E044250FBFCD0014A13F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA66E043250FBFCD0014A13F /* Preview Assets.xcassets */; };
 		CA66E047250FBFCD0014A13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA66E045250FBFCD0014A13F /* LaunchScreen.storyboard */; };
+		CA66E050250FC2530014A13F /* CarsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E04F250FC2530014A13F /* CarsListView.swift */; };
+		CA66E052250FC2670014A13F /* CarsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E051250FC2670014A13F /* CarsListViewModel.swift */; };
+		CA66E055250FC2730014A13F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E054250FC2730014A13F /* Car.swift */; };
+		CA66E058250FC33D0014A13F /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E057250FC33D0014A13F /* Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CA66E043250FBFCD0014A13F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA66E046250FBFCD0014A13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA66E048250FBFCD0014A13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA66E04F250FC2530014A13F /* CarsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListView.swift; sourceTree = "<group>"; };
+		CA66E051250FC2670014A13F /* CarsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewModel.swift; sourceTree = "<group>"; };
+		CA66E054250FC2730014A13F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		CA66E057250FC33D0014A13F /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		CA66E039250FBFC60014A13F /* CarApp */ = {
 			isa = PBXGroup;
 			children = (
+				CA66E056250FC2960014A13F /* Extension */,
+				CA66E053250FC26B0014A13F /* Models */,
+				CA66E04E250FC2130014A13F /* CarsList */,
 				CA66E03A250FBFC60014A13F /* AppDelegate.swift */,
 				CA66E03C250FBFC60014A13F /* SceneDelegate.swift */,
 				CA66E03E250FBFC60014A13F /* ContentView.swift */,
@@ -73,6 +84,31 @@
 				CA66E043250FBFCD0014A13F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA66E04E250FC2130014A13F /* CarsList */ = {
+			isa = PBXGroup;
+			children = (
+				CA66E04F250FC2530014A13F /* CarsListView.swift */,
+				CA66E051250FC2670014A13F /* CarsListViewModel.swift */,
+			);
+			path = CarsList;
+			sourceTree = "<group>";
+		};
+		CA66E053250FC26B0014A13F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA66E054250FC2730014A13F /* Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA66E056250FC2960014A13F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CA66E057250FC33D0014A13F /* Navigation.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA66E03B250FBFC60014A13F /* AppDelegate.swift in Sources */,
+				CA66E050250FC2530014A13F /* CarsListView.swift in Sources */,
+				CA66E058250FC33D0014A13F /* Navigation.swift in Sources */,
+				CA66E055250FC2730014A13F /* Car.swift in Sources */,
 				CA66E03D250FBFC60014A13F /* SceneDelegate.swift in Sources */,
 				CA66E03F250FBFC60014A13F /* ContentView.swift in Sources */,
+				CA66E052250FC2670014A13F /* CarsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
