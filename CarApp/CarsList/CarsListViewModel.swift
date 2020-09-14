@@ -20,4 +20,8 @@ class CarsListViewModel: ObservableObject {
                              model: "Model",
                              type: .sedan))
     }
+    
+    func deleteCar(atOffsets: IndexSet) {
+        self.cars.remove(atOffsets: atOffsets)
+    }
 }

@@ -31,6 +31,8 @@ struct CarsListView: View {
                             .padding()
                             .frame(width: UIScreen.main.bounds.width/4)
                     }
+                }.onDelete { (indexSet) in
+                    self.viewModel.deleteCar(atOffsets: indexSet)
                 }
             }.navigationBarTitle("Cars")
                 .navigationBarItems(trailing:  Button(action: {
