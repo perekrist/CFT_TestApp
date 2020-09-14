@@ -13,6 +13,8 @@ class CarsListViewModel: ObservableObject {
     @Published var cars: [Car] = [Car(year: 2000, brand: "Toyota", model: "Rav4", type: .cuv),
                                   Car(year: 2010, brand: "Ford", model: "Focus", type: .hatchback),
                                   Car(year: 1950, brand: "BMV", model: "X6", type: .sedan)]
+    @Published var car: Car?
+    @Published var carViewModel: CarViewModel?
     
     func addCar() {
         self.cars.append(Car(year: Int.random(in: 1950..<2020),
@@ -23,5 +25,10 @@ class CarsListViewModel: ObservableObject {
     
     func deleteCar(atOffsets: IndexSet) {
         self.cars.remove(atOffsets: atOffsets)
+    }
+    
+    func goToCarView(car: Car) {
+        self.car = car
+        self.carViewModel = CarViewModel(car: self.car!)
     }
 }

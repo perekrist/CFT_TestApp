@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CarsListView: View {
     @ObservedObject private var viewModel = CarsListViewModel()
+    @State var isPresent = false
     
     var body: some View {
         NavigationView {
@@ -30,17 +31,21 @@ struct CarsListView: View {
                             .bold()
                             .padding()
                             .frame(width: UIScreen.main.bounds.width/4)
+                    }.onTapGesture {
+                        self.viewModel.goToCarView(car: car)
+                        self.isPresent.toggle()
                     }
                 }.onDelete { (indexSet) in
                     self.viewModel.deleteCar(atOffsets: indexSet)
                 }
             }.navigationBarTitle("Cars")
                 .navigationBarItems(trailing:  Button(action: {
-                    print("add car")
                     self.viewModel.addCar()
                 }, label: {
                     Text("add")
                 }))
+        }.sheet(isPresented: self.$isPresent) {
+            CarView(viewModel: self.viewModel.carViewModel!)
         }
     }
 }
