@@ -15,7 +15,7 @@ struct Car: Hashable {
     var type: CarType
 }
 
-var CarMakers: [String] = [ "Honda", "Toyota", "Chevrolet", "Ford", "BMV", "Jeep", "Mercedes", "Subaru", "Porsche", "Nissan"]
+var carMakers: [String] = [ "Honda", "Toyota", "Chevrolet", "Ford", "BMV", "Jeep", "Mercedes", "Subaru", "Porsche", "Nissan"]
 
 enum CarType {
     case sedan
