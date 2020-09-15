@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CarsListView: View {
     @ObservedObject private var viewModel = CarsListViewModel()
+    @State var isCreateViewPresented = false
     
     var body: some View {
         NavigationView {
@@ -36,11 +37,14 @@ struct CarsListView: View {
                 }
             }.navigationBarTitle("Cars")
                 .navigationBarItems(trailing:  Button(action: {
-                    print("add car")
+                    self.isCreateViewPresented.toggle()
                     self.viewModel.addCar()
                 }, label: {
                     Text("add")
                 }))
+                .sheet(isPresented: $isCreateViewPresented) {
+                    CreateCarView(viewModel: self.viewModel.createCarViewModel!, isPresented: self.$isCreateViewPresented)
+            }
         }
     }
 }
