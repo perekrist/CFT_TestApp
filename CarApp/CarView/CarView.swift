@@ -13,7 +13,20 @@ struct CarView: View {
     
     var body: some View {
         VStack {
-            Text("\(viewModel.car.year)")
+            HStack {
+                Text("\(viewModel.car.brand)")
+                    .bold()
+                    .padding()
+                    .frame(width: UIScreen.main.bounds.width/4)
+                Text(viewModel.car.model)
+                    .padding()
+                    .frame(width: UIScreen.main.bounds.width/4)
+            }
+            Text(String(viewModel.car.year))
+                .bold()
+                .padding()
+                .frame(width: UIScreen.main.bounds.width/4)
+            Spacer()
         }
     }
 }

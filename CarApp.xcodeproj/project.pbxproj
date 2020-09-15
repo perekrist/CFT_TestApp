@@ -94,8 +94,8 @@
 		CA66E04E250FC2130014A13F /* CarsList */ = {
 			isa = PBXGroup;
 			children = (
-				CA66E04F250FC2530014A13F /* CarsListView.swift */,
 				CA66E051250FC2670014A13F /* CarsListViewModel.swift */,
+				CA66E04F250FC2530014A13F /* CarsListView.swift */,
 			);
 			path = CarsList;
 			sourceTree = "<group>";
