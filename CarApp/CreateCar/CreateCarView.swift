@@ -18,6 +18,10 @@ struct CreateCarView: View {
     
     var body: some View {
         VStack {
+            Text("Введите данные машины")
+                .bold()
+                .padding()
+            
             TextField("Марка машины", text: $brand)
                 .padding()
             
@@ -36,8 +40,8 @@ struct CreateCarView: View {
                 self.isPresented.toggle()
             }) {
                 Text("Добавить")
-                .bold()
-                .padding()
+                    .bold()
+                    .padding()
             }
         }
     }
