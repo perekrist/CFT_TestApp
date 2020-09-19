@@ -17,6 +17,8 @@
 		CA66E052250FC2670014A13F /* CarsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E051250FC2670014A13F /* CarsListViewModel.swift */; };
 		CA66E055250FC2730014A13F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E054250FC2730014A13F /* Car.swift */; };
 		CA66E058250FC33D0014A13F /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E057250FC33D0014A13F /* Navigation.swift */; };
+		CA66E0602510700F0014A13F /* CreateCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E05F2510700F0014A13F /* CreateCarView.swift */; };
+		CA66E0622510701C0014A13F /* CreateCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E0612510701C0014A13F /* CreateCarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		CA66E051250FC2670014A13F /* CarsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewModel.swift; sourceTree = "<group>"; };
 		CA66E054250FC2730014A13F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		CA66E057250FC33D0014A13F /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		CA66E05F2510700F0014A13F /* CreateCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCarView.swift; sourceTree = "<group>"; };
+		CA66E0612510701C0014A13F /* CreateCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			children = (
 				CA66E056250FC2960014A13F /* Extension */,
 				CA66E053250FC26B0014A13F /* Models */,
+				CA66E05E25106FFC0014A13F /* CreateCar */,
 				CA66E04E250FC2130014A13F /* CarsList */,
 				CA66E03A250FBFC60014A13F /* AppDelegate.swift */,
 				CA66E03C250FBFC60014A13F /* SceneDelegate.swift */,
@@ -109,6 +114,15 @@
 				CA66E057250FC33D0014A13F /* Navigation.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CA66E05E25106FFC0014A13F /* CreateCar */ = {
+			isa = PBXGroup;
+			children = (
+				CA66E05F2510700F0014A13F /* CreateCarView.swift */,
+				CA66E0612510701C0014A13F /* CreateCarViewModel.swift */,
+			);
+			path = CreateCar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA66E03B250FBFC60014A13F /* AppDelegate.swift in Sources */,
+				CA66E0622510701C0014A13F /* CreateCarViewModel.swift in Sources */,
 				CA66E050250FC2530014A13F /* CarsListView.swift in Sources */,
 				CA66E058250FC33D0014A13F /* Navigation.swift in Sources */,
+				CA66E0602510700F0014A13F /* CreateCarView.swift in Sources */,
 				CA66E055250FC2730014A13F /* Car.swift in Sources */,
 				CA66E03D250FBFC60014A13F /* SceneDelegate.swift in Sources */,
 				CA66E03F250FBFC60014A13F /* ContentView.swift in Sources */,
