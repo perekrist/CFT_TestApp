@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		634DF2D2DF45C15BB6E68924 /* Pods_CarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70ED34EFE615531495C2C2F9 /* Pods_CarApp.framework */; };
 		CA66E03B250FBFC60014A13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E03A250FBFC60014A13F /* AppDelegate.swift */; };
 		CA66E03D250FBFC60014A13F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E03C250FBFC60014A13F /* SceneDelegate.swift */; };
 		CA66E03F250FBFC60014A13F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E03E250FBFC60014A13F /* ContentView.swift */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70ED34EFE615531495C2C2F9 /* Pods_CarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8799A4A714326BCE32B65C0E /* Pods-CarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarApp.debug.xcconfig"; path = "Target Support Files/Pods-CarApp/Pods-CarApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CA66E037250FBFC60014A13F /* CarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA66E03A250FBFC60014A13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA66E03C250FBFC60014A13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		CA66E057250FC33D0014A13F /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		CA66E05F2510700F0014A13F /* CreateCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCarView.swift; sourceTree = "<group>"; };
 		CA66E0612510701C0014A13F /* CreateCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCarViewModel.swift; sourceTree = "<group>"; };
+		D5B9483F7A9142612627C4A7 /* Pods-CarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarApp.release.xcconfig"; path = "Target Support Files/Pods-CarApp/Pods-CarApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634DF2D2DF45C15BB6E68924 /* Pods_CarApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81A52561BFC5F46F56E5D118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70ED34EFE615531495C2C2F9 /* Pods_CarApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A63B8EEF748B21DD9EB2EF55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8799A4A714326BCE32B65C0E /* Pods-CarApp.debug.xcconfig */,
+				D5B9483F7A9142612627C4A7 /* Pods-CarApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CA66E02E250FBFC60014A13F = {
 			isa = PBXGroup;
 			children = (
 				CA66E039250FBFC60014A13F /* CarApp */,
 				CA66E038250FBFC60014A13F /* Products */,
+				A63B8EEF748B21DD9EB2EF55 /* Pods */,
+				81A52561BFC5F46F56E5D118 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA66E04B250FBFCD0014A13F /* Build configuration list for PBXNativeTarget "CarApp" */;
 			buildPhases = (
+				CD1755FB054D477787FA4991 /* [CP] Check Pods Manifest.lock */,
 				CA66E033250FBFC60014A13F /* Sources */,
 				CA66E034250FBFC60014A13F /* Frameworks */,
 				CA66E035250FBFC60014A13F /* Resources */,
+				B3002716795664916F104613 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +217,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3002716795664916F104613 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarApp/Pods-CarApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarApp/Pods-CarApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarApp/Pods-CarApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD1755FB054D477787FA4991 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA66E033250FBFC60014A13F /* Sources */ = {
@@ -338,6 +407,7 @@
 		};
 		CA66E04C250FBFCD0014A13F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8799A4A714326BCE32B65C0E /* Pods-CarApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +428,7 @@
 		};
 		CA66E04D250FBFCD0014A13F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B9483F7A9142612627C4A7 /* Pods-CarApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
