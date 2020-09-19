@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		CA66E058250FC33D0014A13F /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E057250FC33D0014A13F /* Navigation.swift */; };
 		CA66E0602510700F0014A13F /* CreateCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E05F2510700F0014A13F /* CreateCarView.swift */; };
 		CA66E0622510701C0014A13F /* CreateCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E0612510701C0014A13F /* CreateCarViewModel.swift */; };
+		CAAD90E3251654E2001709E0 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD90E2251654E2001709E0 /* DataBaseService.swift */; };
+		CAAD90E725165518001709E0 /* CarDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD90E625165518001709E0 /* CarDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		CA66E057250FC33D0014A13F /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		CA66E05F2510700F0014A13F /* CreateCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCarView.swift; sourceTree = "<group>"; };
 		CA66E0612510701C0014A13F /* CreateCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCarViewModel.swift; sourceTree = "<group>"; };
+		CAAD90E2251654E2001709E0 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
+		CAAD90E625165518001709E0 /* CarDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDB.swift; sourceTree = "<group>"; };
 		D5B9483F7A9142612627C4A7 /* Pods-CarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarApp.release.xcconfig"; path = "Target Support Files/Pods-CarApp/Pods-CarApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +72,6 @@
 				8799A4A714326BCE32B65C0E /* Pods-CarApp.debug.xcconfig */,
 				D5B9483F7A9142612627C4A7 /* Pods-CarApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -93,6 +96,7 @@
 		CA66E039250FBFC60014A13F /* CarApp */ = {
 			isa = PBXGroup;
 			children = (
+				CAAD90E1251654CA001709E0 /* Services */,
 				CA66E056250FC2960014A13F /* Extension */,
 				CA66E053250FC26B0014A13F /* Models */,
 				CA66E05E25106FFC0014A13F /* CreateCar */,
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				CA66E054250FC2730014A13F /* Car.swift */,
+				CAAD90E625165518001709E0 /* CarDB.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +153,14 @@
 				CA66E0612510701C0014A13F /* CreateCarViewModel.swift */,
 			);
 			path = CreateCar;
+			sourceTree = "<group>";
+		};
+		CAAD90E1251654CA001709E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CAAD90E2251654E2001709E0 /* DataBaseService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,8 @@
 				CA66E055250FC2730014A13F /* Car.swift in Sources */,
 				CA66E03D250FBFC60014A13F /* SceneDelegate.swift in Sources */,
 				CA66E03F250FBFC60014A13F /* ContentView.swift in Sources */,
+				CAAD90E3251654E2001709E0 /* DataBaseService.swift in Sources */,
+				CAAD90E725165518001709E0 /* CarDB.swift in Sources */,
 				CA66E052250FC2670014A13F /* CarsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

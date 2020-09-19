@@ -11,11 +11,13 @@ import Foundation
 class CreateCarViewModel: ObservableObject {
     @Published var car: Car?
     
-    func saveCar(year: Int,
+    func saveCar(id: Int,
+                 year: Int,
                  brand: String,
                  model: String,
-                 type: CarType) {
-        self.car = Car(year: year,
+                 type: String) {
+        self.car = Car(id: id,
+                       year: year,
                        brand: brand,
                        model: model,
                        type: type)

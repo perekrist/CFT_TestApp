@@ -36,7 +36,7 @@ struct CreateCarView: View {
             
             Spacer()
             Button(action: {
-                self.viewModel.saveCar(year: Int(self.year) ?? 2000, brand: self.brand, model: self.model, type: .coupe)
+                self.viewModel.saveCar(id: 0, year: Int(self.year) ?? 2000, brand: self.brand, model: self.model, type: self.type)
                 self.isPresented.toggle()
             }) {
                 Text("Добавить")

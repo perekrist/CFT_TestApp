@@ -9,10 +9,11 @@
 import Foundation
 
 struct Car: Hashable {
+    var id: Int
     var year: Int
     var brand: String
     var model: String
-    var type: CarType
+    var type: String
 }
 
 var carMakers: [String] = [ "Honda", "Toyota", "Chevrolet", "Ford", "BMV", "Jeep", "Mercedes", "Subaru", "Porsche", "Nissan"]

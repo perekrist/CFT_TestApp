@@ -10,9 +10,9 @@ import Foundation
 import SwiftUI
 
 class CarsListViewModel: ObservableObject {
-    @Published var cars: [Car] = [Car(year: 2000, brand: "Toyota", model: "Rav4", type: .cuv),
-                                  Car(year: 2010, brand: "Ford", model: "Focus", type: .hatchback),
-                                  Car(year: 1950, brand: "BMV", model: "X6", type: .sedan)]
+    @Published var cars: [Car] = [Car(id: 1, year: 2000, brand: "Toyota", model: "Rav4", type: "cuv"),
+                                  Car(id: 2, year: 2010, brand: "Ford", model: "Focus", type: "hatchback"),
+                                  Car(id: 3, year: 1950, brand: "BMV", model: "X6", type: "sedan")]
     var createCarViewModel: CreateCarViewModel?
     
     func addCar() {
