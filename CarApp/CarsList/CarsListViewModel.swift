@@ -10,22 +10,28 @@ import Foundation
 import SwiftUI
 
 class CarsListViewModel: ObservableObject {
-    @Published var cars: [Car] = [Car(id: 1, year: 2000, brand: "Toyota", model: "Rav4", type: "cuv"),
-                                  Car(id: 2, year: 2010, brand: "Ford", model: "Focus", type: "hatchback"),
-                                  Car(id: 3, year: 1950, brand: "BMV", model: "X6", type: "sedan")]
-    var createCarViewModel: CreateCarViewModel?
+  @Published var cars: [Car] = [Car(id: 1, year: 2000, brand: "Toyota", model: "Rav4", type: "cuv"),
+                                Car(id: 2, year: 2010, brand: "Ford", model: "Focus", type: "hatchback"),
+                                Car(id: 3, year: 1950, brand: "BMV", model: "X6", type: "sedan")]
+  private var dbService = DataBaseService()
+  init() {
+    self.cars.removeAll()
+    dbService.getCars()
+    self.cars = dbService.cars
+    print(cars.count)
+  }
+  
+  var createCarViewModel: CreateCarViewModel?
+  
+  func addCar() {
+    self.createCarViewModel = CreateCarViewModel()
+  }
+  
+  
+  
+  func deleteCar(atOffsets: IndexSet) {
+    self.cars.remove(atOffsets: atOffsets)
     
-    func addCar() {
-        self.createCarViewModel = CreateCarViewModel()
-//        self.cars.append(Car(year: Int.random(in: 1950..<2020),
-//                             brand: carMakers[Int.random(in: 0..<carMakers.count)],
-//                             model: "Model",
-//                             type: .sedan))
-    }
-    
-    
-    
-    func deleteCar(atOffsets: IndexSet) {
-        self.cars.remove(atOffsets: atOffsets)
-    }
+//    dbService.deleteCar(carID: cars.)
+  }
 }

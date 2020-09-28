@@ -9,17 +9,17 @@
 import Foundation
 
 class CreateCarViewModel: ObservableObject {
-    @Published var car: Car?
-    
-    func saveCar(id: Int,
-                 year: Int,
-                 brand: String,
-                 model: String,
-                 type: String) {
-        self.car = Car(id: id,
-                       year: year,
-                       brand: brand,
-                       model: model,
-                       type: type)
-    }
+  private var dbService = DataBaseService()
+  
+  func saveCar(id: Int,
+               year: Int,
+               brand: String,
+               model: String,
+               type: String) {
+    dbService.saveCar(car: Car(id: id,
+                               year: year,
+                               brand: brand,
+                               model: model,
+                               type: type))
+  }
 }

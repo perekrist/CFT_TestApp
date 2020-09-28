@@ -7,15 +7,17 @@
 //
 
 import SwiftUI
+import AVFoundation
+import AVKit
 
 struct ContentView: View {
-    var body: some View {
-        CarsListView()
-    }
+  var body: some View {
+    StickyView()
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }

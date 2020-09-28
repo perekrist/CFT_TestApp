@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		634DF2D2DF45C15BB6E68924 /* Pods_CarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70ED34EFE615531495C2C2F9 /* Pods_CarApp.framework */; };
+		CA28D9B5251E377900914ADF /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28D9B4251E377900914ADF /* SampleView.swift */; };
 		CA66E03B250FBFC60014A13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E03A250FBFC60014A13F /* AppDelegate.swift */; };
 		CA66E03D250FBFC60014A13F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E03C250FBFC60014A13F /* SceneDelegate.swift */; };
 		CA66E03F250FBFC60014A13F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E03E250FBFC60014A13F /* ContentView.swift */; };
@@ -22,11 +23,13 @@
 		CA66E0622510701C0014A13F /* CreateCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66E0612510701C0014A13F /* CreateCarViewModel.swift */; };
 		CAAD90E3251654E2001709E0 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD90E2251654E2001709E0 /* DataBaseService.swift */; };
 		CAAD90E725165518001709E0 /* CarDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD90E625165518001709E0 /* CarDB.swift */; };
+		CAB76F79251ECE5400329760 /* StickyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB76F78251ECE5400329760 /* StickyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		70ED34EFE615531495C2C2F9 /* Pods_CarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8799A4A714326BCE32B65C0E /* Pods-CarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarApp.debug.xcconfig"; path = "Target Support Files/Pods-CarApp/Pods-CarApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CA28D9B4251E377900914ADF /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		CA66E037250FBFC60014A13F /* CarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA66E03A250FBFC60014A13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA66E03C250FBFC60014A13F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		CA66E0612510701C0014A13F /* CreateCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCarViewModel.swift; sourceTree = "<group>"; };
 		CAAD90E2251654E2001709E0 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
 		CAAD90E625165518001709E0 /* CarDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDB.swift; sourceTree = "<group>"; };
+		CAB76F78251ECE5400329760 /* StickyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyView.swift; sourceTree = "<group>"; };
 		D5B9483F7A9142612627C4A7 /* Pods-CarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarApp.release.xcconfig"; path = "Target Support Files/Pods-CarApp/Pods-CarApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +112,8 @@
 				CA66E045250FBFCD0014A13F /* LaunchScreen.storyboard */,
 				CA66E048250FBFCD0014A13F /* Info.plist */,
 				CA66E042250FBFCD0014A13F /* Preview Content */,
+				CA28D9B4251E377900914ADF /* SampleView.swift */,
+				CAB76F78251ECE5400329760 /* StickyView.swift */,
 			);
 			path = CarApp;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				CA66E0622510701C0014A13F /* CreateCarViewModel.swift in Sources */,
 				CA66E050250FC2530014A13F /* CarsListView.swift in Sources */,
 				CA66E058250FC33D0014A13F /* Navigation.swift in Sources */,
+				CA28D9B5251E377900914ADF /* SampleView.swift in Sources */,
 				CA66E0602510700F0014A13F /* CreateCarView.swift in Sources */,
 				CA66E055250FC2730014A13F /* Car.swift in Sources */,
 				CA66E03D250FBFC60014A13F /* SceneDelegate.swift in Sources */,
@@ -289,6 +296,7 @@
 				CAAD90E3251654E2001709E0 /* DataBaseService.swift in Sources */,
 				CAAD90E725165518001709E0 /* CarDB.swift in Sources */,
 				CA66E052250FC2670014A13F /* CarsListViewModel.swift in Sources */,
+				CAB76F79251ECE5400329760 /* StickyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

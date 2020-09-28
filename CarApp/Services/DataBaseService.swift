@@ -8,9 +8,10 @@
 
 import Foundation
 import RealmSwift
+import SwiftUI
 
-class DataBaseService {
-    var cars: [Car] = []
+class DataBaseService: ObservableObject {
+    @Published var cars: [Car] = []
     
     func getCars() {
         cars.removeAll()
@@ -18,6 +19,7 @@ class DataBaseService {
             let realm = try Realm()
             let cars = realm.objects(CarDB.self)
             self.cars = convertCars(cars: cars)
+          print(cars.count)
         } catch let error as NSError {
             print(error.localizedDescription)
         }
@@ -36,6 +38,7 @@ class DataBaseService {
             try! realm.write {
                 realm.add(carDB)
             }
+          getCars()
         } catch let error as NSError {
             print(error.localizedDescription)
         }

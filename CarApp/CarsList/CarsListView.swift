@@ -11,11 +11,12 @@ import SwiftUI
 struct CarsListView: View {
     @ObservedObject private var viewModel = CarsListViewModel()
     @State var isCreateViewPresented = false
+  @ObservedObject private var dbServise = DataBaseService()
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.cars, id: \.self) { car in
+                ForEach(dbServise.cars, id: \.self) { car in
                     HStack {
                         HStack {
                             Text("\(car.brand)")
@@ -33,9 +34,13 @@ struct CarsListView: View {
                             .frame(width: UIScreen.main.bounds.width/4)
                     }
                 }.onDelete { (indexSet) in
-                    self.viewModel.deleteCar(atOffsets: indexSet)
+                  self.viewModel.deleteCar(atOffsets: indexSet)
                 }
-            }.navigationBarTitle("Cars")
+            }.onAppear {
+              dbServise.getCars()
+              print(dbServise.cars.count)
+            }
+            .navigationBarTitle("Cars")
                 .navigationBarItems(trailing:  Button(action: {
                     self.isCreateViewPresented.toggle()
                     self.viewModel.addCar()
@@ -44,6 +49,7 @@ struct CarsListView: View {
                 }))
                 .sheet(isPresented: $isCreateViewPresented) {
                     CreateCarView(viewModel: self.viewModel.createCarViewModel!, isPresented: self.$isCreateViewPresented)
+                      
             }
         }
     }
